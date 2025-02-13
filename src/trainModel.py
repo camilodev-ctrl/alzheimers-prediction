@@ -7,11 +7,11 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report, confusion_matrix, roc_curve, auc
 
 
-data = pd.read_csv('data/processed/alzheimersPredictionDataset.csv')
+data = pd.read_csv('data/processed/alzheimers_prediction_dataset.csv')
 
 
-xData = data.drop('AlzheimersDiagnosis', axis=1)
-yData = data['AlzheimersDiagnosis']
+xData = data.drop('Alzheimer’s Diagnosis', axis=1)
+yData = data['Alzheimer’s Diagnosis']
 
 
 if yData.dtype != 'object':  
